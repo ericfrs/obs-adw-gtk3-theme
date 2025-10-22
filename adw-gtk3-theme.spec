@@ -6,9 +6,9 @@ BuildArch:      noarch
 License:        LGPL-2.1-only
 URL:            https://github.com/lassekongo83/adw-gtk3
 Source0:        %{url}/releases/download/v%{version}/adw-gtk3v%{version}.tar.xz
-Source1:        https://raw.githubusercontent.com/lassekongo83/adw-gtk3/refs/heads/main/README.md
-Source2:        https://raw.githubusercontent.com/lassekongo83/adw-gtk3/refs/heads/main/LICENSE
-
+Source1:        https://raw.githubusercontent.com/lassekongo83/adw-gtk3/refs/heads/main/README.md#/README.md.upstream
+Source2:        https://raw.githubusercontent.com/lassekongo83/adw-gtk3/refs/heads/main/LICENSE#/LICENSE.upstream
+ 
 %description
 %{summary}.
 
