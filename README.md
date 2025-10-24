@@ -1,6 +1,6 @@
 # adw-gtk3 package for openSUSE
 
-[![Build Status](https://build.opensuse.org/projects/home:ericfrs/packages/adw-gtk3-theme/badge.svg)](https://build.opensuse.org/projects/home:ericfrs/packages/adw-gtk3-theme)
+[![build result](https://build.opensuse.org/projects/home:ericfrs/packages/adw-gtk3-theme/badge.svg?type=default)](https://build.opensuse.org/package/show/home:ericfrs/adw-gtk3-theme)
 
 This repository contains the build files to package the [adw-gtk3](https://github.com/lassekongo83/adw-gtk3) theme for **openSUSE** using the [Open Build Service (OBS)](https://openbuildservice.org/).
 
