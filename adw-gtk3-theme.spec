@@ -7,13 +7,17 @@ License:        LGPL-2.1-only
 URL:            https://github.com/lassekongo83/adw-gtk3
 Source0:        %{url}/releases/download/v%{version}/adw-gtk3v%{version}.tar.xz
 Source1:        https://raw.githubusercontent.com/lassekongo83/adw-gtk3/refs/heads/main/README.md#/README.md.upstream
-Source2:        https://raw.githubusercontent.com/lassekongo83/adw-gtk3/refs/heads/main/LICENSE#/LICENSE.upstream
- 
+Source2:        https://raw.githubusercontent.com/lassekongo83/adw-gtk3/refs/heads/main/LICENSE#/LICENSE.upstream 
+
+BuildRequires:  fdupes
+
 %description
 %{summary}.
 
 %prep
 %autosetup -c
+
+%build
 
 %install
 install -Dpm644 %{SOURCE1} README.md
@@ -21,6 +25,7 @@ install -Dpm644 %{SOURCE2} LICENSE
 mkdir -p %{buildroot}%{_datadir}/themes
 cp -ap adw-gtk3 %{buildroot}%{_datadir}/themes/adw-gtk3/
 cp -ap adw-gtk3-dark %{buildroot}%{_datadir}/themes/adw-gtk3-dark/
+%fdupes %{buildroot}%{_datadir}/themes/
 
 %files
 %license LICENSE
@@ -30,3 +35,6 @@ cp -ap adw-gtk3-dark %{buildroot}%{_datadir}/themes/adw-gtk3-dark/
 %{_datadir}/themes/adw-gtk3-dark/
 
 %changelog
+* Fri Oct 24 2025 - 6.4
+- Initial package version 6.4
+- Add fdupes to remove duplicated files
